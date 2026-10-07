@@ -14,24 +14,30 @@
     </div>
     <div class="self-stretch flex flex-col justify-start items-start gap-1.5 overflow-hidden">
       <div class="w-24 h-6 justify-start text-slate-400 text-[10px] font-semibold font-['Inter']">MONITORAMENTO</div>
-      <div class="self-stretch h-10 px-2.5 bg-indigo-50 rounded-lg inline-flex justify-start items-center gap-2.5 overflow-hidden">
+      <router-link to="/" class="self-stretch h-10 px-2.5 bg-indigo-50 rounded-lg inline-flex justify-start items-center gap-2.5 overflow-hidden hover:bg-indigo-100 transition-colors">
         <div class="size-4 relative overflow-hidden">
           <div class="size-3.5 left-[2.25px] top-[2.25px] absolute outline outline-[1.70px] outline-offset-[-0.85px] outline-sky-600"></div>
         </div>
         <div class="justify-start text-sky-700 text-xs font-semibold font-['Inter']">Visão geral</div>
-      </div>
-      <div class="self-stretch h-10 px-2.5 bg-white rounded-lg inline-flex justify-start items-center gap-2.5 overflow-hidden">
+      </router-link>
+      <router-link to="/compararEstacoes" class="self-stretch h-10 px-2.5 bg-white rounded-lg inline-flex justify-start items-center gap-2.5 overflow-hidden hover:bg-slate-50 transition-colors">
         <div class="size-4 relative overflow-hidden">
           <div class="size-3.5 left-[2.25px] top-[1.50px] absolute outline outline-[1.70px] outline-offset-[-0.85px] outline-slate-500"></div>
         </div>
-        <div class="justify-start text-slate-500 text-xs font-medium font-['Inter']">Base de medições</div>
-      </div>
-      <div class="self-stretch h-10 px-2.5 bg-white rounded-lg inline-flex justify-start items-center gap-2.5 overflow-hidden">
+        <div class="justify-start text-slate-500 text-xs font-medium font-['Inter']">Comparar Estações</div>
+      </router-link>
+      <router-link to="/mapaEstacoes" class="self-stretch h-10 px-2.5 bg-white rounded-lg inline-flex justify-start items-center gap-2.5 overflow-hidden hover:bg-slate-50 transition-colors">
         <div class="size-4 relative overflow-hidden">
           <div class="size-4 left-[1.48px] top-[1.43px] absolute outline outline-[1.70px] outline-offset-[-0.85px] outline-slate-500"></div>
         </div>
-        <div class="justify-start text-slate-500 text-xs font-medium font-['Inter']">Sobre a estação</div>
-      </div>
+        <div class="justify-start text-slate-500 text-xs font-medium font-['Inter']">Mapas das Estações</div>
+      </router-link>
+      <router-link to="/baixarDados" class="self-stretch h-10 px-2.5 bg-white rounded-lg inline-flex justify-start items-center gap-2.5 overflow-hidden hover:bg-slate-50 transition-colors">
+        <div class="size-4 relative overflow-hidden">
+          <div class="w-3 h-3 left-[2.25px] top-[2.25px] absolute outline outline-[1.70px] outline-offset-[-0.85px] outline-slate-500"></div>
+        </div>
+        <div class="justify-start text-slate-500 text-xs font-medium font-['Inter']">Baixar dados</div>
+      </router-link>
     </div>
     <div class="self-stretch p-3.5 bg-slate-100 rounded-xl flex flex-col justify-start items-start gap-3 overflow-hidden">
       <div class="justify-start text-slate-500 text-[10px] font-semibold font-['Inter']">ESTAÇÃO ATUAL</div>
